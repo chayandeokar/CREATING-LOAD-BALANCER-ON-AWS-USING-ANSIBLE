@@ -1,18 +1,18 @@
 # CREATING-LOAD-BALANCER-ON-AWS-USING-ANSIBLE
 
-What is Load Balancer ?
+## What is Load Balancer ?
 
-Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a server farm. Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them.
+** Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a server farm. Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them. **
 
 So lets start this task.
 
-Create 5 ec2 Instances. Here i am taking mixture of t2.micro and t3.micro. You can take any instance type. But be sure take t3.micro for Ansible Node. In which you have to Install Ansible.
+## Create 5 ec2 Instances. Here i am taking mixture of t2.micro and t3.micro. You can take any instance type. But be sure take t3.micro for Ansible Node. In which you have to Install Ansible.
 
-1 - - Ansible Node (Controller Node) -- t3.micro
+> Ansible Node (Controller Node) -- t3.micro
 
-1 - - LoadBalancer -- t2.micro
+> LoadBalancer -- t2.micro
 
-3 - - Webserver -- t2.micro
+> Webserver -- t2.micro
 
 here i have used ansible to launch ec2 instances. code for launching ec2 instance using Ansible.
 
